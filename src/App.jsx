@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import * as react from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    console.log('Mounted!');
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
